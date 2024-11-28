@@ -62,6 +62,6 @@ label {
 }
 @media screen and (max-width: 350px) {
   li {
-    width: 100%;
+    width: auto;
   }
 }

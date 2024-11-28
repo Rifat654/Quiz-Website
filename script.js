@@ -54,9 +54,10 @@ const quizData = [
 
 const answerElement = document.querySelectorAll(".answer");
 
-const option = document.querySelectorAll(
-  "#question, .option_1, .option_2, .option_3, .option_4  "
-);
+const [question, option_1, option_2, option_3, option_4] =
+  document.querySelectorAll(
+    "#question, .option_1, .option_2, .option_3, .option_4  "
+  );
 
 const submit = document.querySelector("#submit");
 
@@ -69,7 +70,7 @@ const load = () => {
   const { question, option } = quizData[current_quiz];
   console.log(question);
 
-  option.innerText = question;
+  question.innerTex = question;
 };
 
 load();
