@@ -68,7 +68,7 @@ const score = 0;
 
 const load = () => {
   const { question, option } = quizData[current_quiz];
-  console.log(question);
+  console.log(option);
 
   questionEl.innerText = question;
 
@@ -78,3 +78,5 @@ const load = () => {
 };
 
 load();
+
+//============= select answers and clicked button ================//
