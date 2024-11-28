@@ -50,6 +50,13 @@ label {
   background-color: rgb(62, 8, 104);
   border-radius: 15px;
   color: #fff;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: rgb(105, 9, 9);
+  font-weight: bold;
+  padding: 8px 22px;
 }
 
 /* ================= media screen ====================== */
@@ -58,6 +65,9 @@ label {
   #quiz-app {
     max-width: 100%;
     margin: 0px 10px;
+  }
+  #question {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 350px) {
