@@ -44,7 +44,7 @@ const quizData = [
   },
 
   {
-    question: "What is the symble to select css class",
+    question: "What is the icon to select css class",
     Options: [".", "#", "+", "%"],
     correct: 0,
   },
@@ -54,7 +54,7 @@ const quizData = [
 
 const answerElement = document.querySelectorAll(".answer");
 
-const [question, option_1, option_2, option_3, option_4] =
+const [questionEl, option_1, option_2, option_3, option_4] =
   document.querySelectorAll(
     "#question, .option_1, .option_2, .option_3, .option_4  "
   );
@@ -70,7 +70,11 @@ const load = () => {
   const { question, option } = quizData[current_quiz];
   console.log(question);
 
-  question.innerTex = question;
+  questionEl.innerText = question;
+
+  option.forEach(
+    (option, index) => (window[`Option_${index + 1}`].innerText = option)
+  );
 };
 
 load();
