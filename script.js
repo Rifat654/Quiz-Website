@@ -67,13 +67,14 @@ const score = 0;
 //============= load quiz function ================//
 
 const load = () => {
-  const { question, option } = quizData[current_quiz];
-  console.log(option);
+  const { question, Options } = quizData[current_quiz];
+  console.log(Options);
 
   questionEl.innerText = question;
 
-  option.forEach(
-    (option, index) => (window[`Option_${index + 1}`].innerText = option)
+  Options.forEach(
+    (Curoptions, index) =>
+      (window[`option_${index + 1}`].innerText = Curoptions)
   );
 };
 

@@ -30,6 +30,7 @@ body {
 .ul li {
   list-style: none;
   padding: 10px 30px;
+  cursor: pointer;
 }
 
 li {
@@ -39,8 +40,10 @@ li {
   width: 250px;
 }
 
-label {
+label,
+input {
   font-weight: 500;
+  cursor: pointer;
 }
 .btn {
   cursor: pointer;
@@ -67,7 +70,7 @@ label {
     margin: 0px 10px;
   }
   #question {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 350px) {
