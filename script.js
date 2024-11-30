@@ -73,8 +73,8 @@ const load = () => {
   questionEl.innerText = question;
 
   Options.forEach(
-    (Curoptions, index) =>
-      (window[`option_${index + 1}`].innerText = Curoptions)
+    (curoptions, index) =>
+      (window[`option_${index + 1}`].innerText = curoptions)
   );
 };
 
