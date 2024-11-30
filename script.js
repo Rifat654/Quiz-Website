@@ -61,23 +61,20 @@ const [questionEl, option_1, option_2, option_3, option_4] =
 
 const submit = document.querySelector("#submit");
 
-const current_quiz = 0;
+const currentQuiz = 0;
 const score = 0;
 
 //============= load quiz function ================//
-
 const load = () => {
-  const { question, Options } = quizData[current_quiz];
-  console.log(Options);
-
+  const { question, Options } = quizData[currentQuiz];
   questionEl.innerText = question;
 
-  Options.forEach(
-    (curoptions, index) =>
-      (window[`option_${index + 1}`].innerText = curoptions)
-  );
+  Options.forEach((curOption, index) => {
+    const optionEl = document.getElementById(`option_${index + 1}`);
+    if (optionEl) {
+      optionEl.innerText = curOption;
+    }
+  });
 };
-
-load();
 
 //============= select answers and clicked button ================//
